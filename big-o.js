@@ -1,5 +1,5 @@
 //1.dog breed big O: O(1)
-//2. even or odd: 
+//2. even or odd:
 
 // function isEven(value) {
 //     if (value % 2 === 0) {
@@ -121,13 +121,12 @@
 
 // O(1) it's constant
 
-
 // 10. What Am I?
 
 // function isWhat(n) {
 //     if (n < 2 || n % 1 !== 0) {
 //         return false;
-        
+
 //     }
 //     for (let i = 2; i < n; ++i) {
 //         if (n % i === 0) return false;
@@ -143,7 +142,7 @@
 //     if(disc > 0) {
 //         hanoi(disc -1, a, c, b);
 //         console.log('Move disc ' +disc+' from '+a+' to '+c);
-        
+
 //         hanoi(disc -1, b, a, c);
 //     }
 // }
@@ -176,8 +175,26 @@
 //O(n)
 
 //question 3 reverse string
+// function reverseStr(str) {
+//   if (str.length <= 1) {
+//     console.log(str);
+//   }
+//   let newStr = "";
+//   for (let i = str.length; i >= 0; i--) {
+//     newStr = newStr + str.charAt(i);
+//   }
+//   console.log(newStr);
+// }
+// reverseStr("hello");
+//O(n)
 
+//question 4 triangles
 
-
-
-
+function triangles(n) {
+  let total = 0;
+  for (let i = n; i >= 0; i--) {
+    total += i;
+  }
+  console.log(total);
+}
+triangles(5);
