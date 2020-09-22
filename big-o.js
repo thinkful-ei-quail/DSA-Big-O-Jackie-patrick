@@ -190,11 +190,58 @@
 
 //question 4 triangles
 
-function triangles(n) {
-  let total = 0;
-  for (let i = n; i >= 0; i--) {
-    total += i;
-  }
-  console.log(total);
-}
-triangles(5);
+// function triangles(n) {
+//   let total = 0;
+//   for (let i = n; i >= 0; i--) {
+//     total += i;
+//   }
+//   console.log(total);
+// }
+// triangles(5);
+//O(n)
+
+//question 5 string split
+// function stringSplit(str, sep) {
+//   let newArr = [];
+//   let index = -1;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.charAt(i) === sep) {
+//       newArr.push(str.slice(index + 1, i));
+//       index = i;
+//     }
+//   }
+//   newArr.push(str.slice(index + 1, str.length));
+//   console.log(newArr);
+// }
+// stringSplit("20/30/40", "/");
+//O(n)
+
+// 6.Fibbonacci
+// function looping(n) {
+//     var a = 0, b = 1, f = 0;
+//     console.log(a)
+//     console.log(b)
+//     for(var i = 0; i <= n; i++) {
+//         f = a + b;
+//         a = b;
+//         b = f;
+//         console.log(f)
+//     }
+// };
+// looping(15)
+
+// O(n)
+
+//7.Factoral
+// function factoral(num) {
+//   if (num === 1) {
+//     return num;
+//   }
+//   let total = 1
+//   for(let i = num; i>0; i--) {
+//     total *= i;
+//   }
+//   console.log(total)
+// }
+// factoral(10)
+
