@@ -139,15 +139,44 @@
 
 // 11. Tower of Hanoi
 
-function hanoi(disc,a,b,c) {
-    if(disc > 0) {
-        hanoi(disc -1, a, c, b);
-        console.log('Move disc ' +disc+' from '+a+' to '+c);
+// function hanoi(disc,a,b,c) {
+//     if(disc > 0) {
+//         hanoi(disc -1, a, c, b);
+//         console.log('Move disc ' +disc+' from '+a+' to '+c);
         
-        hanoi(disc -1, b, a, c);
-    }
-}
-hanoi(3, 'a', 'b', 'c');
+//         hanoi(disc -1, b, a, c);
+//     }
+// }
+// hanoi(3, 'a', 'b', 'c');
+
+//question one sheep
+// function sheep(num) {
+//     for(let i = num; i > 0; i--) {
+//        console.log(i + ': Another sheep jumps over the fence')
+//     }
+//     console.log('All sheep jumped overe the fence')
+// }
+// sheep(8)
+//O(n)
+
+//question 2 power calculator
+// function powerCalculator(base, exp) {
+//     if(exp === 0 ){
+//         console.log(1)
+//     }
+//     let count = base
+//     for(let i = 1; i < exp; i++) {
+//         count = count * base;
+//     }
+
+//     console.log(count)
+// }
+// powerCalculator(10, 3)
+
+//O(n)
+
+//question 3 reverse string
+
 
 
 
